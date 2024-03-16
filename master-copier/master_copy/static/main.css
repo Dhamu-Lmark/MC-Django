@@ -51,15 +51,15 @@
   filter: blur(3px);
 }
 
-
+  
       *,
       :after,
       :before {
         box-sizing: border-box;
       }
-
-
-
+  
+      
+  
       body {
         margin: 0;
         background-attachment: fixed;
@@ -67,7 +67,7 @@
 		font-size: 23px;
         /* background: white; */
       }
-
+	  
 	  .navbar li a{
 		font-size: 18px;
 	  }
@@ -80,8 +80,8 @@
 		padding: 5px 20px;
         border-radius: 10px;
         color: white;
-
-
+  
+  
       }
 
 	  .pricing-card {
@@ -122,23 +122,23 @@
         /* border-radius: 15px; */
         color: white;
 	  }
-
+  
       .btn-green:hover {
         background-color: #4dd56b;
         border-color: #4dd56b;
         /* border-radius: 8px; */
         color: white;
       }
-
+  
       .navbar-nav {
         justify-content: space-evenly;
         width: 100%;
       }
-
+  
       .navbar .navbar-toggler {
         border: none !important;
       }
-
+  
       .navbar-toggler {
         padding: 0.25rem 0.75rem;
         font-size: 1.25rem;
@@ -147,7 +147,7 @@
         border: 2px solid black;
         border-radius: 0.25rem;
       }
-
+  
       .key-features-section {
         background-color:  #bcfee6;
         padding: 20px;
@@ -159,7 +159,7 @@
         padding: 20px;
         border-radius: 5px;
 	  }
-
+	  
 	  .home p{
 		font-size: 33px;
 	  }
@@ -167,18 +167,18 @@
         color: black;
         /* Change text color to black */
       }
-
+  
       .container {
         font-family: 'Times New Roman', Times, serif;
         font-size: large;
-
+  
       }
-
+  
       .footer-text {
         font-size: 50px;
       }
-
-
+      
+      
       .col-3 i{
         color: #1e7e34;
       }
@@ -191,7 +191,7 @@
       .fa-square-facebook {
       color: #3c72e5;
   }
-
+  
   .col-12 a small{
       text-decoration: none;
       list-style: none;
@@ -201,10 +201,11 @@
       font-family: Courier, monospace;
       font-size: 25px;
      }
-
+     
      .col-12 h2{
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 37px;
      }
 
 
+     
