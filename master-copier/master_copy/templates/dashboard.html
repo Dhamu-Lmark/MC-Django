@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{% static 'image/logo-mc.png' %}">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'dashboard.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Welcome to the Home Page</h2>
+    {% if username %}
+        <p>Welcome, {{ username }}! </p>
+    {% else %}
+    {% endif %}
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+            <a href="{% url 'logout' %}">Logout</a>
+        </div>
+        <div class="content">
+            <h2>Dashboard Content</h2>
+            <p>This is where you can display various elements and information relevant to the user.</p>
+        </div>
+    </div>
+</body>
+</html>
