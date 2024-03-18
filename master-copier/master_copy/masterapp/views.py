@@ -30,7 +30,7 @@ def dashboard(request):
         return redirect('login')
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'index.html')
 
 def Account_Manager(request):
     return render(request, 'Account Manager.html')
