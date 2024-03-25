@@ -18,6 +18,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from masterapp import views
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,7 +30,11 @@ urlpatterns = [
     path('Blog/', views.Blog, name='Blog'),
     path('Contact/', views.Contact, name='Contact'),
     path('Pricing/', views.Pricing, name='Pricing'),
-    path('forget_password/', views.forget_password, name='forget_password'),
+    path('forgot-password/', views.forgot_password, name='forget_password'),
+    path('reset-password/<int:user_id>/<str:token>/', views.reset_password, name='reset_password'),
+
+    # Add other URL patterns as needed
+    # path('forget_password/', views.forget_password, name='forget_password'),
     path('dashboard/', views.dashboard, name='dashboard'),
     path('', views.home, name='home'),
 ]
